@@ -1,7 +1,5 @@
 fired = false;
-var dataset = [ 25, 7, 5, 26, 11, 8, 25, 14, 23, 19,
-                14, 11, 22, 29, 11, 13, 12, 17, 18, 10,
-                24, 18, 25, 9, 3 ];
+var dataset = [3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39];
 
 d3.select("body").selectAll("div")
 	.data(dataset)
@@ -28,5 +26,5 @@ function countSelected() {
 
 function complete() {
 	fired = !fired;
-	alert('Done');
+	console.log('Done');
 }
